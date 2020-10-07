@@ -17,10 +17,13 @@
             var txtp = window.document.getElementById('txtpais')
             var res = window.document.querySelector('div#res')
             var pais = (txtp.value)
-            res.innerHTML = `<p>Você nasceu no ${pais}</p>`
-            if (pais == brasil) {
-                
+            res.innerHTML = `<p>Você nasceu no ${pais}.</p>`
+            if (pais == 'brasil') {
+                res.innerHTML += '<p>Você é <strong>BRASILEIRO!!!</strong></p>'
+            }else {
+                res.innerHTML += '<p>Você é <strong>ESTRANGEIRO!!!</strong></p>'
             }
+            
         }
 
     </script>
