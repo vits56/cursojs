@@ -4,6 +4,17 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     msg.innerHTML = `Agora são ${hora} horas`
-    if (hora >= 0 && hora < 12)
-    
-}
+    if (hora >= 0 && hora < 12){
+        
+        img.src = 'fotos/manha.png'
+        document.body.style.background = '#e2cd9f'
+    }else if (hora > 12 && hora <= 18){
+
+        img.src = 'fotos/tarde.png'
+        document.body.style.background = ''
+    }else {
+
+        img.src = 'fotos/noite.png'
+        document.body.style.background = ''
+    }
+}        
